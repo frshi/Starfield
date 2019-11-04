@@ -54,7 +54,7 @@ class OddballParticle extends Particle
 	{
 		myX = myY = 150;
 		myAngle = Math.random()*2*Math.PI;
-		mySpeed = Math.random()*10;
+		mySpeed = Math.random()*3;
 		myColor = color((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
 	}
 	void move()
@@ -66,6 +66,6 @@ class OddballParticle extends Particle
 	void show()
 	{
 		stroke(myColor);
-		ellipse((float)myX, (float)myY, 2,2);
+		ellipse((float)myX, (float)myY, 15,15);
 	}
 }
